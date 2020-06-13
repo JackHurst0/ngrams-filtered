@@ -1,0 +1,6 @@
+# macOS Files
+.DS_Stor
+
+# Raw resources. These are too large to include
+res/real/
+
