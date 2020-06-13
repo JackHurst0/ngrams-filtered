@@ -7,7 +7,7 @@ The purpose of this filtered set is to allow developers to have a quick accessib
 The data is reduced from 25GB to 58MB (500 times smaller!)
 
 ## Results
-There are 26 files in `output/real`, one foe each letter of the alphabet. The filenames are based on the same syntax n-grams supplies it's data in.
+There are 26 files in `res/real`, one foe each letter of the alphabet. The filenames are based on the same syntax n-grams supplies it's data in.
 
 Each file is a CSV containing all words found in the corpus beginning with that letter, along with a score. Here's a snippet of the file for the letter z
 
