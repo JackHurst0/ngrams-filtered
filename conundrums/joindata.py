@@ -10,14 +10,14 @@ def getfiles():
 	return [os.path.join('..','output','real', f) for f in files] 
 
 def writeoutput(files):
-	with open('9s-alphabetical.csv', 'w') as output:
+	with open('10s-alphabetical.csv', 'w') as output:
 		files.sort()
 		for file in files:
 			with open(file) as data:
 				print('Opened {0}'.format(file))
 				rows = csv.reader(data, delimiter=',')
 				for row in rows:
-					if len(row[0]) == 9:
+					if len(row[0]) == 10:
 						output.write('{0},{1}\n'.format(row[0], row[1]))
 
 

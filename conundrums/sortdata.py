@@ -4,7 +4,7 @@ import csv
 # Sort existing data to get most frequent values at the top
 
 def getdata():
-	with open('9s-alphabetical.csv', 'r') as input:
+	with open('10s-alphabetical.csv', 'r') as input:
 		rows = csv.reader(input, delimiter=',')
 		output = [{'word': row[0], 'score': row[1]} for row in rows]
 	output.sort(key=lambda x: int(x['score']), reverse=True)
@@ -12,7 +12,7 @@ def getdata():
 
 
 def writedata(words):
-	with open('9s-commonality.csv', 'w') as output:
+	with open('10s-commonality.csv', 'w') as output:
 		for word in words:
 			output.write('{0},{1}\n'.format(word['word'], word['score']))
 
